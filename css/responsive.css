@@ -80,13 +80,13 @@
     background-color: #1cbbb4;
   }
 
-  .experience_section .img-box {
+  .about_section .img-box {
 
     margin-bottom: 45px;
 
   }
 
-  .category_section .category_container .box {
+  .solutions_section .category_container .box {
     flex-basis: 34%;
   }
 
@@ -129,11 +129,11 @@
 }
 
 @media (max-width: 576px) {
-  .category_section .category_container {
+  .solutions_section .category_container {
     justify-content: center;
   }
 
-  .category_section .category_container .box {
+  .solutions_section .category_container .box {
     flex-basis: 52%;
   }
 }
