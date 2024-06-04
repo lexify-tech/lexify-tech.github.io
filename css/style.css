@@ -9,6 +9,10 @@ body {
   padding-bottom: 90px;
 }
 
+/* .layout_padding_inline {
+  padding: 0 10px 0 5px;
+} */
+
 .layout_padding2 {
   padding: 45px 0;
 }
@@ -638,44 +642,24 @@ a:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 35px;
-  margin-bottom: 75px;
 }
 
 .info_section .info_top .info_logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .info_section .info_top .info_logo img {
-  width: 65px;
+  width: 500px;
 }
 
-.info_section .info_top .info_logo span {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 32px;
-}
-
-.info_section .info_top .social_box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.info_section .info_top .social_box a {
-  margin: 0 10px;
-}
-
-.info_section .info_top .social_box a img {
-  width: auto;
-  height: auto;
-  max-width: 30px;
-  max-height: 30px;
+@media (max-width: 768px)  {
+  .info_section .info_top .info_logo img {
+    width: 330px;
+  }
 }
 
 .info_section a {
@@ -705,33 +689,6 @@ a:focus {
           flex-direction: column;
 }
 
-.info_section .info_form form input {
-  outline: none;
-  width: 100%;
-  padding: 7px 10px;
-}
-
-.info_section .info_form form button {
-  display: inline-block;
-  padding: 8px 40px;
-  background-color: #ff4f5a;
-  color: #ffffff;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  border: 1px solid transparent;
-  border-radius: 0;
-  border: 1.5px solid #ffffff;
-  margin-top: 15px;
-  text-transform: uppercase;
-  font-size: 15px;
-}
-
-.info_section .info_form form button:hover {
-  background-color: transparent;
-  border-color: #ff4f5a;
-  color: #ff4f5a;
-}
-
 .info_section .info_contact .link-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -741,6 +698,7 @@ a:focus {
           align-items: center;
   margin: 30px 0;
   color: #ffffff;
+  justify-content: center;
 }
 
 .info_section .info_contact .link-box .img-box {
@@ -753,9 +711,9 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 45px;
-  min-height: 45px;
-  margin-right: 20px;
+  min-width: 30px;
+  min-height: 30px;
+  margin-right: 10px;
 }
 
 .info_section .info_contact .link-box .img-box img {
