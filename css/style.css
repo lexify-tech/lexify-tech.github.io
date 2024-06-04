@@ -139,9 +139,10 @@ a:focus {
 }
 
 .custom_nav-container {
+  margin-top: 5px;
   z-index: 99999;
   padding: 0;
-  height: 70px;
+  height: 60px;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -266,9 +267,9 @@ a:focus {
   color: #ffffff;
 }
 
-.slider_section .img-container .img-box img {
+/* .slider_section .img-container .img-box img {
   width: 100%;
-}
+} */
 
 .slider_section #home_page {
   position: unset;
@@ -851,5 +852,19 @@ a:focus {
 .menu_btn-style button .s-3 {
   -webkit-transform: rotate(-45deg) translate(8px, -8px);
           transform: rotate(-45deg) translate(8px, -8px);
+}
+
+.custom-height {
+  height: 70vh;
+}
+
+@media (max-width: 768px) {
+  .slider_section .detail-box {
+    height: 65vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 /*# sourceMappingURL=style.css.map */
