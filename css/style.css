@@ -825,4 +825,68 @@ a:focus {
     justify-content: space-between;
   }
 }
+
+/* Floating Button Styles */
+.floating-button {
+  position: fixed;
+  bottom: 35px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  background-image: url('../images/lexify/icon-green.svg');
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.floating-button::before {
+  content: "Portfolio";
+  position: absolute;
+  right: 70px;
+  background-color: #1cbbb4;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.floating-button:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+  background-color: #1a2e35c6;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .floating-button {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .floating-button::before {
+    right: 60px;
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
