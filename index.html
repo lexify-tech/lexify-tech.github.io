@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- Basic -->
@@ -8,12 +8,23 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
+  <meta name="keywords" content="software development, web development, mobile development, desktop development, IT consulting, agile management, prototyping, Lexify, technology solutions, custom software, Brazil software company" />
+  <meta name="description" content="Lexify is a technology company specializing in web, mobile, and desktop development. We provide custom software solutions, IT consulting, and project management services in Brazil." />
+  <meta name="author" content="Lexify" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Lexify - Software House" />
+  <meta property="og:description" content="Lexify is a technology company specializing in web, mobile, and desktop development. We provide custom software solutions, IT consulting, and project management services in Brazil." />
+  <meta property="og:image" content="images/lexify/large-logo.png" />
+  <meta property="og:url" content="https://lexify.tech" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lexify - Software House" />
+  <meta name="twitter:description" content="Lexify is a technology company specializing in web, mobile, and desktop development. We provide custom software solutions, IT consulting, and project management services in Brazil." />
+  <meta name="twitter:image" content="images/lexify/large-logo.png" />
 
-  <title>Lexify - Software House</title>
+  <title>Lexify - Software House | Custom Software Development Solutions</title>
   <link rel="icon" href="images/lexify/icon-green.svg" type="image/x-icon">
+  <link rel="canonical" href="https://lexify.tech" />
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -25,6 +36,41 @@
   <link href="css/responsive.css" rel="stylesheet" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Lexify",
+      "url": "https://lexify.tech",
+      "logo": "https://lexify.tech/images/lexify/large-logo.png",
+      "description": "Lexify is a technology company specializing in web, mobile, and desktop development. We provide custom software solutions, IT consulting, and project management services in Brazil.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "BR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-38-99192-3490",
+        "contactType": "customer service",
+        "email": "contact@lexify.tech"
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Lexify",
+      "url": "https://lexify.tech",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://lexify.tech/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
 </head>
 
 <body>
@@ -44,18 +90,27 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#home_page">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#home_page" data-lang-pt="Home" data-lang-en="Home">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about_section">Sobre</a>
+                <a class="nav-link" href="#about_section" data-lang-pt="Sobre" data-lang-en="About">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#solutions_section">Soluções</a>
+                <a class="nav-link" href="#solutions_section" data-lang-pt="Soluções" data-lang-en="Solutions">Solutions</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#why_us"> Por que Lexify </a>
+                <a class="nav-link" href="#why_us" data-lang-pt="Por que Lexify" data-lang-en="Why Lexify">Why Lexify</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://forms.gle/J5Fi8fvxZsKFqdpx9" target="_blank" data-lang-pt="Trabalhe Conosco" data-lang-en="Work with us">Work with us</a>
               </li>
             </ul>
+            <div class="language-switcher ml-auto">
+              <button class="btn btn-link" onclick="toggleLanguage()">
+                <span class="lang-pt">PT</span>
+                <span class="lang-en">EN</span>
+              </button>
+            </div>
           </div>
           <div>
             <div class="custom_menu-btn">
@@ -100,21 +155,21 @@
                 <div class="col-md-5 offset-md-1">
                   <div class="detail-box">
                     <div>
-                      <h1>
-                        Bem-vindo à Lexify
+                      <h1 data-lang-pt="Bem-vindo à Lexify" data-lang-en="Welcome to Lexify">
+                        Welcome to Lexify
                       </h1>
-                      <p>
-                        Nossa paixão é transformar ideias em soluções inovadoras e funcionais.
+                      <p data-lang-pt="Nossa paixão é transformar ideias em soluções inovadoras e funcionais." data-lang-en="Our passion is transforming ideas into innovative and functional solutions.">
+                        Our passion is transforming ideas into innovative and functional solutions.
                       </p>
                     </div>
                     <div class="btn-box">
                       <a href="https://wa.me/5538991923490?text=Ol%C3%A1,%20vim%20do%20site%20da%20Lexify,%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20oferecidas.%20"
-                        target="blank" class="btn-1">
-                        Saiba mais
+                        target="blank" class="btn-1" data-lang-pt="Saiba mais" data-lang-en="Learn more">
+                        Learn more
                       </a>
                       <a href="https://wa.me/5538991923490?text=Ol%C3%A1,%20vim%20do%20site%20da%20Lexify,%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20oferecidas.%20"
-                        target="blank" class="btn-2">
-                        Fale com nosso time
+                        target="blank" class="btn-2" data-lang-pt="Fale com nosso time" data-lang-en="Contact our team">
+                        Contact our team
                       </a>
                     </div>
                   </div>
@@ -135,22 +190,21 @@
                 <div class="col-md-5 offset-md-1">
                   <div class="detail-box">
                     <div>
-                      <h1>
-                        Nosso negócio é transformar ideias
+                      <h1 data-lang-pt="Nosso negócio é transformar ideias" data-lang-en="Our business is transforming ideas">
+                        Our business is transforming ideas
                       </h1>
-                      <p>
-                        Especializados em desenvolvimento de aplicativos web, mobile e desktop, estamos aqui para trazer
-                        sua visão à vida.
+                      <p data-lang-pt="Especializados em desenvolvimento de aplicativos web, mobile e desktop, estamos aqui para trazer sua visão à vida." data-lang-en="Specialized in web, mobile, and desktop application development, we're here to bring your vision to life.">
+                        Specialized in web, mobile, and desktop application development, we're here to bring your vision to life.
                       </p>
                     </div>
                     <div class="btn-box">
                       <a href="https://wa.me/5538991923490?text=Ol%C3%A1,%20vim%20do%20site%20da%20Lexify,%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20oferecidas.%20"
-                        target="_blank" class="btn-1">
-                        Saiba mais
+                        target="_blank" class="btn-1" data-lang-pt="Saiba mais" data-lang-en="Learn more">
+                        Learn more
                       </a>
                       <a href="https://wa.me/5538991923490?text=Ol%C3%A1,%20vim%20do%20site%20da%20Lexify,%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20oferecidas.%20"
-                        target="_blank" class="btn-2">
-                        Fale com nosso time
+                        target="_blank" class="btn-2" data-lang-pt="Fale com nosso time" data-lang-en="Contact our team">
+                        Contact our team
                       </a>
                     </div>
                   </div>
@@ -185,23 +239,21 @@
         <div class="col-md-7">
           <div class="detail-box">
             <div class="heading_container">
-              <h2>
-                Quem Somos
+              <h2 data-lang-pt="Quem Somos" data-lang-en="Who We Are">
+                Who We Are
               </h2>
             </div>
-            <p>
-              A Lexify é uma empresa de tecnologia dedicada à criação, manutenção, gestão, e consultoria. Desde a
-              concepção até a execução, nossa equipe altamente qualificada trabalha com você para desenvolver soluções
-              personalizadas que atendem às suas necessidades específicas, sejam web, mobile, ou desktop.
+            <p data-lang-pt="A Lexify é uma empresa de tecnologia dedicada à criação, manutenção, gestão, e consultoria. Desde a concepção até a execução, nossa equipe altamente qualificada trabalha com você para desenvolver soluções personalizadas que atendem às suas necessidades específicas, sejam web, mobile, ou desktop." data-lang-en="Lexify is a technology company dedicated to creation, maintenance, management, and consulting. From conception to execution, our highly qualified team works with you to develop customized solutions that meet your specific needs, whether web, mobile, or desktop.">
+              Lexify is a technology company dedicated to creation, maintenance, management, and consulting. From conception to execution, our highly qualified team works with you to develop customized solutions that meet your specific needs, whether web, mobile, or desktop.
             </p>
             <div class="btn-box">
               <a target="_blank" href="https://wa.me/5538991923490?text=Ol%C3%A1,%20vim%20do%20site%20da%20Lexify,%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20oferecidas.%20"
-                class="btn-1">
-                Entre em contato
+                class="btn-1" data-lang-pt="Entre em contato" data-lang-en="Contact us">
+                Contact us
               </a>
-              <a target="_blank" href="https://wa.me/5538991923490?text=Ol%C3%A1,%20vim%20do%20site%20da%20Lexify,%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20oferecidas.%20"
-                class="btn-2">
-                Entenda nossas soluções
+              <a target="_blank" href="https://portdevtech.vercel.app/p/lexify-tech-gasj3J"
+                class="btn-2" data-lang-pt="Nosso portfólio" data-lang-en="Our portfolio">
+                Learn about our solutions
               </a>
             </div>
           </div>
@@ -218,8 +270,8 @@
   <section id="solutions_section" class="solutions_section layout_padding">
     <div class="container">
       <div class="heading_container">
-        <h2>
-          Algumas de nossas soluções
+        <h2 data-lang-pt="Algumas de nossas soluções" data-lang-en="Some of our solutions">
+          Some of our solutions
         </h2>
       </div>
       <div class="category_container">
@@ -228,8 +280,8 @@
             <img src="images/c1.png" alt="">
           </div>
           <div class="detail-box">
-            <h5>
-              Prototipação & Gestão de projetos
+            <h5 data-lang-pt="Protótipagem & Gestão de projetos" data-lang-en="Prototyping & Project Management">
+              Prototyping & Project Management
             </h5>
           </div>
         </div>
@@ -238,8 +290,8 @@
             <img src="images/c5.png" alt="">
           </div>
           <div class="detail-box">
-            <h5>
-              Consultoria de TI
+            <h5 data-lang-pt="Consultoria de TI" data-lang-en="IT Consulting">
+              IT Consulting
             </h5>
           </div>
         </div>
@@ -248,8 +300,8 @@
             <img src="images/c6.png" alt="">
           </div>
           <div class="detail-box">
-            <h5>
-              Gestão ágil
+            <h5 data-lang-pt="Gestão ágil" data-lang-en="Agile Management">
+              Agile Management
             </h5>
           </div>
         </div>
@@ -258,8 +310,8 @@
             <img src="images/c2.png" alt="">
           </div>
           <div class="detail-box">
-            <h5>
-              Desenvolvimento Web
+            <h5 data-lang-pt="Desenvolvimento Web" data-lang-en="Web Development">
+              Web Development
             </h5>
           </div>
         </div>
@@ -268,8 +320,8 @@
             <img src="images/c4.png" alt="">
           </div>
           <div class="detail-box">
-            <h5>
-              Desenvolvimento Mobile
+            <h5 data-lang-pt="Desenvolvimento Mobile" data-lang-en="Mobile Development">
+              Mobile Development
             </h5>
           </div>
         </div>
@@ -278,8 +330,8 @@
             <img src="images/c3.png" alt="">
           </div>
           <div class="detail-box">
-            <h5>
-              Desenvolvimento Desktop
+            <h5 data-lang-pt="Desenvolvimento Desktop" data-lang-en="Desktop Development">
+              Desktop Development
             </h5>
           </div>
         </div>
@@ -302,19 +354,15 @@
         </div>
       </div>
       <div class="detail-box">
-        <h2>
-          Nossa missão é transformar
+        <h2 data-lang-pt="Nossa missão é transformar" data-lang-en="Our mission is to transform">
+          Our mission is to transform
         </h2>
-        <p>
-          Nossa missão é
-          impulsionar o sucesso através da inovação e da colaboração contínua. Nossa visão é ser líder no mercado de
-          soluções tecnológicas, reconhecida pela excelência e inovação. Nossos valores incluem inovação constante,
-          compromisso com a qualidade e colaboração estreita com nossos clientes para garantir que suas necessidades
-          sejam plenamente atendidas.
+        <p data-lang-pt="Nossa missão é impulsionar o sucesso através da inovação e da colaboração contínua. Nossa visão é ser líder no mercado de soluções tecnológicas, reconhecida pela excelência e inovação. Nossos valores incluem inovação constante, compromisso com a qualidade e colaboração estreita com nossos clientes para garantir que suas necessidades sejam plenamente atendidas." data-lang-en="Our mission is to drive success through innovation and continuous collaboration. Our vision is to be a leader in the technology solutions market, recognized for excellence and innovation. Our values include constant innovation, commitment to quality, and close collaboration with our clients to ensure their needs are fully met.">
+          Our mission is to drive success through innovation and continuous collaboration. Our vision is to be a leader in the technology solutions market, recognized for excellence and innovation. Our values include constant innovation, commitment to quality, and close collaboration with our clients to ensure their needs are fully met.
         </p>
         <a
-        target="_blank" href="https://wa.me/5538991923490?text=Ol%C3%A1,%20vim%20do%20site%20da%20Lexify,%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20oferecidas.%20">
-          Fale com nosso time
+        target="_blank" href="https://wa.me/5538991923490?text=Ol%C3%A1,%20vim%20do%20site%20da%20Lexify,%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20oferecidas.%20" data-lang-pt="Fale com nosso time" data-lang-en="Contact our team">
+          Contact our team
         </a>
       </div>
     </div>
@@ -331,8 +379,8 @@
           <div class="col-md-5 offset-md-1">
             <div class="detail-box">
               <div class="heading_container">
-                <h2>
-                  Por que a Lexify?
+                <h2 data-lang-pt="Por que a Lexify?" data-lang-en="Why Lexify?">
+                  Why Lexify?
                 </h2>
               </div>
               <div class="tab_container">
@@ -342,11 +390,11 @@
                     <img src="images/f4.png" alt="">
                   </div>
                   <div class="detail-box">
-                    <h5>
-                      Experiência e Expertise
+                    <h5 data-lang-pt="Experiência e Expertise" data-lang-en="Experience and Expertise">
+                      Experience and Expertise
                     </h5>
-                    <h3>
-                      Respiramos tecnologia
+                    <h3 data-lang-pt="Respiramos tecnologia" data-lang-en="We breathe technology">
+                      We breathe technology
                     </h3>
                   </div>
                 </div>
@@ -356,11 +404,11 @@
                     <img src="images/f2.png" alt="">
                   </div>
                   <div class="detail-box">
-                    <h5>
-                      Gestão e processos
+                    <h5 data-lang-pt="Gestão e processos" data-lang-en="Management and Processes">
+                      Management and Processes
                     </h5>
-                    <h3>
-                      Contamos com o sucesso dos nossos clientes
+                    <h3 data-lang-pt="Contamos com o sucesso dos nossos clientes" data-lang-en="We count on our clients' success">
+                      We count on our clients' success
                     </h3>
                   </div>
                 </div>
@@ -370,11 +418,11 @@
                     <img src="images/f3.png" alt="">
                   </div>
                   <div class="detail-box">
-                    <h5>
-                      Transparência
+                    <h5 data-lang-pt="Transparência" data-lang-en="Transparency">
+                      Transparency
                     </h5>
-                    <h3>
-                      Nosso negócio é o seu negócio
+                    <h3 data-lang-pt="Nosso negócio é o seu negócio" data-lang-en="Our business is your business">
+                      Our business is your business
                     </h3>
                   </div>
                 </div>
@@ -418,8 +466,8 @@
       <div class="row">
         <div class="col-lg-9 col-md-10 mx-auto">
           <div class="heading_container">
-            <h2>
-              O que nossos clientes dizem
+            <h2 data-lang-pt="O que nossos clientes dizem" data-lang-en="What our clients say">
+              What our clients say
             </h2>
           </div>
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -429,8 +477,8 @@
                   <h4>
                     Ayrton Prates
                   </h4>
-                  <p>
-                    A Lexify transformou nossa visão em realidade com soluções inovadoras e de alta qualidade.
+                  <p data-lang-pt="A Lexify transformou nossa visão em realidade com soluções inovadoras e de alta qualidade." data-lang-en="Lexify transformed our vision into reality with innovative and high-quality solutions.">
+                    Lexify transformed our vision into reality with innovative and high-quality solutions.
                   </p>
                   <img src="images/quote.png" alt="">
                 </div>
@@ -440,9 +488,8 @@
                   <h4>
                     Nayara Almeida
                   </h4>
-                  <p>
-                    O suporte contínuo, Transparência, e a expertise da Lexify foram essenciais para o sucesso do nosso
-                    aplicativo.
+                  <p data-lang-pt="O suporte contínuo, Transparência, e a expertise da Lexify foram essenciais para o sucesso do nosso aplicativo." data-lang-en="The continuous support, transparency, and expertise of Lexify were essential for the success of our application.">
+                    The continuous support, transparency, and expertise of Lexify were essential for the success of our application.
                   </p>
                   <img src="images/quote.png" alt="">
                 </div>
@@ -452,9 +499,8 @@
                   <h4>
                     Victor Ferreira
                   </h4>
-                  <p>
-                    Soliciei um aplicativo completo para ser executado pela Lexify, e tive resultados surpreendentes.
-                    Alta qualidade e Transparência nas entregas.
+                  <p data-lang-pt="Soliciei um aplicativo completo para ser executado pela Lexify, e tive resultados surpreendentes. Alta qualidade e Transparência nas entregas." data-lang-en="I requested a complete application to be executed by Lexify, and I had surprising results. High quality and transparency in deliveries.">
+                    I requested a complete application to be executed by Lexify, and I had surprising results. High quality and transparency in deliveries.
                   </p>
                   <img src="images/quote.png" alt="">
                 </div>
@@ -537,10 +583,37 @@
   </footer>
   <!-- end  footer section -->
 
-  <a href="https://portdevtech.vercel.app/p/lexify-tech-gasj3J" target="_blank" class="floating-button"></a>
+  <a href="https://wa.me/5538991923490?text=Ol%C3%A1,%20vim%20do%20site%20da%20Lexify,%20gostaria%20de%20saber%20mais%20sobre%20as%20solu%C3%A7%C3%B5es%20oferecidas.%20" target="_blank" class="floating-button"></a>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/custom.js"></script>
+  <script>
+    let currentLang = 'en';
+    
+    function toggleLanguage() {
+      currentLang = currentLang === 'en' ? 'pt' : 'en';
+      updateLanguage();
+    }
+
+    function updateLanguage() {
+      document.querySelectorAll('[data-lang-' + currentLang + ']').forEach(element => {
+        if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+          element.value = element.getAttribute('data-lang-' + currentLang);
+        } else {
+          element.textContent = element.getAttribute('data-lang-' + currentLang);
+        }
+      });
+
+      // Update language switcher visibility
+      document.querySelector('.lang-pt').style.display = currentLang === 'en' ? 'inline' : 'none';
+      document.querySelector('.lang-en').style.display = currentLang === 'pt' ? 'inline' : 'none';
+    }
+
+    // Initialize language
+    document.addEventListener('DOMContentLoaded', function() {
+      updateLanguage();
+    });
+  </script>
 </body>
 </html>
